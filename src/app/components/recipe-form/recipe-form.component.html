@@ -1,0 +1,21 @@
+<h2>Add a New Recipe</h2>
+
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Recipe Name</label>
+    <input id="name" [(ngModel)]="recipeForm.value.name" name="name" placeholder="Enter recipe name">
+  </div>
+
+  <div>
+    <label for="cuisine">Cuisine</label>
+    <input id="cuisine" [(ngModel)]="recipeForm.value.cuisine" name="cuisine" placeholder="Enter cuisine type">
+  </div>
+
+  <div>
+    <label for="description">Description</label>
+    <textarea id="description" [(ngModel)]="recipeForm.value.description" name="description" placeholder="Enter description"></textarea>
+  </div>
+
+  <button type="submit">Add Recipe</button>
+</form>
+
