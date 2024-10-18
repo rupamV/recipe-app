@@ -2,7 +2,7 @@
     <h2>{{ recipe.name }}</h2>
     <p><strong>Cuisine:</strong> {{ recipe.cuisine }}</p>
     <p><strong>Description:</strong> {{ recipe.description }}</p>
-    <a routerLink="/recipes">Back to Recipes</a>
+    <a [routerLink]="['/recipes']" class="back-button">Back to List</a>
   </div>
   <div *ngIf="!recipe">
     <p>Recipe not found.</p>
